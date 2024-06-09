@@ -1,0 +1,44 @@
+#Navbar{
+  background-color: aliceblue;
+}
+.button{
+    display: inline-block;
+    background-color:aliceblue;
+    color: #000000;
+    
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button:hover{
+    /* the color of text you want to show after hover */
+    color: black;
+
+}
+.button::after{
+    /* this is what all  will be done when mouse outs from the button */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 166, 0);
+    z-index: -1;
+    transition: 0.3s ease all;
+    transform: scale(0, 1);
+    /* this is you are to change for diffirent transition; */
+
+    transform-origin: bottom left;
+    transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+
+
+}
+.button:hover::after{
+    transform: scale(1, 1);
+    transform-origin: top left;
+}

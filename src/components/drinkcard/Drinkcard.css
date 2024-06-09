@@ -1,0 +1,39 @@
+/* Card zoom effect */
+.card-container:hover .card {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+/* Button card hover effect */
+.buttoncard h5 {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.buttoncard:hover {
+    color: rgb(255, 253, 253);
+}
+
+.buttoncard::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 217, 255);
+    z-index: -1;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.buttoncard:hover::after {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}

@@ -1,0 +1,35 @@
+.cat-card {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cat-card:hover {
+    /* the color of text you want to show after hover */
+    color: rgb(255, 253, 253);
+}
+
+.cat-card::after {
+    /* this is what all will be done when mouse outs from the button */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 204, 0);
+    z-index: -1;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.cat-card:hover::after {
+    transform: scaleX(1);
+    transform-origin:right;
+}
