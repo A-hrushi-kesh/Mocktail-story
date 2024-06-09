@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Mocktail-story/static/css/main.eab61b3e.css",
-    "main.js": "/Mocktail-story/static/js/main.c26f7615.js",
+    "main.js": "/Mocktail-story/static/js/main.b30731fe.js",
     "static/media/image.jpg": "/Mocktail-story/static/media/image.30dc0d01c17b74105264.jpg",
     "index.html": "/Mocktail-story/index.html",
     "main.eab61b3e.css.map": "/Mocktail-story/static/css/main.eab61b3e.css.map",
-    "main.c26f7615.js.map": "/Mocktail-story/static/js/main.c26f7615.js.map"
+    "main.b30731fe.js.map": "/Mocktail-story/static/js/main.b30731fe.js.map"
   },
   "entrypoints": [
     "static/css/main.eab61b3e.css",
-    "static/js/main.c26f7615.js"
+    "static/js/main.b30731fe.js"
   ]
 }
